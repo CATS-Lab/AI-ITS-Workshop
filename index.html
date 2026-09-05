@@ -43,4 +43,11 @@ section.content{padding:34px 0 0}.split{display:block}.lead{font-size:17px;line-
 
 </main>
 
-</body></html>
+</body><script>
+document.querySelectorAll('.profile').forEach(function(card){
+  var heading=card.querySelector('h3');
+  if(heading && heading.textContent.indexOf('Zhiwen Fan')!==-1){
+    card.innerHTML='<img class="portrait" src="https://jiachenli94.github.io/assets/img/profile_photo.jpg" alt="Portrait of Prof. Jiachen Li" width="160" height="190" loading="lazy"><div><h3>Prof. Jiachen Li</h3><p class="affiliation">Georgia Institute of Technology</p><p>Jiachen Li is a Coca-Cola Foundation Early Career Professor and Assistant Professor with joint appointments in Industrial and Systems Engineering and Mechanical Engineering at Georgia Tech. He directs the Trustworthy Autonomous Systems Laboratory. His research spans robotics, trustworthy AI and machine learning, reinforcement learning, control, optimization, computer vision, and intelligent autonomous systems.</p><a class="profile-link" href="https://jiachenli94.github.io/">Faculty profile — Jiachen Li</a><p class="talk-title">Talk title coming soon</p></div>';
+  }
+});
+</script></html>
